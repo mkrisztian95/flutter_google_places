@@ -360,7 +360,7 @@ class PredictionTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: Icon(Icons.location_on),
-      title: Text(prediction.description),
+      title: Text(prediction.description, style: TextStyle(color: Colors.black),),
       onTap: () {
         if (onTap != null) {
           onTap(prediction);
